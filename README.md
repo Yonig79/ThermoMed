@@ -17,6 +17,7 @@ Model Capacity
 Components
 
 
+
 ⦁ MCP9808 temperature sensor  
 ⦁ TEC1-12704 Peltier cell  
 ⦁ IRLB8721 MOSFET  
@@ -29,6 +30,7 @@ Components
 User Interface
 
 
+
 This system includes a SH1106 OLED display (128x64) to provide real-time feedback to the user. The screen shows:
 ⦁ Current temperature readings from the MCP9808 sensor  
 ⦁ "Ready" indicator when temperature is below 8 °C  
@@ -39,6 +41,7 @@ This system includes a SH1106 OLED display (128x64) to provide real-time feedbac
 The display is connected via SPI to the microcontroller and uses the U8g2 library for rendering text. This interface allows users to monitor the system without needing a computer, making it ideal for portable or standalone applications such as insulin storage.
 
 Control Logic
+
 
 
 ⦁ Soft-start ramp gradually increases PWM until control begins  
@@ -65,10 +68,31 @@ Thermal Performance
 Status
 
 
+
 Prototype in progress. Firmware stable and tested.  
-The system is also in continuous improvement to enhance performance and reliability.
-Hardware Design
-The schematic and PCB layout are currently in progress and will be added to this repository soon.
+ Evaluation Report:
+
+&nbsp;45 thermal cycles analyzed.
+
+&nbsp;Average deviation: 0.15–0.24 °C.
+
+&nbsp;Average error: ±0.24–±0.36 °C.
+
+&nbsp;Power consumption: ~40 W over 30 minutes.
+
+&nbsp;Test volume: 20 mL (≈6.67 NovoLog insulin cartridges).
+
+
+
+&nbsp;Hardware Design Files:
+
+&nbsp;Gerber Files.
+
+&nbsp;Bill of Materials (BOM).
+
+&nbsp;PCB Layout.
+
+&nbsp;Schematic Diagrams.
 
 
 
